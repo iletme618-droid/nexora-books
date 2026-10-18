@@ -95,12 +95,27 @@
       <div class="price">₹49</div>
       <p class="muted">Digital PDF eBook</p>
 
-      <button onclick="alert('Online payment setup is coming next. No payment has been taken.')">
-        Buy eBook — ₹49
-      </button>
-      <p class="muted">
-        Secure payment and automatic PDF delivery will be
-        connected in the next steps.
+      
+<button onclick="document.getElementById('payment').style.display='block';">
+  Buy eBook — ₹49
+</button>
+
+<div id="payment" style="display:none; margin-top:20px; text-align:center;">
+  <h3>Pay ₹49 using UPI</h3>
+  <p>Scan the QR code below using any UPI app.</p>
+  <img src="upi-qr.png" alt="NEXORA BOOKS UPI payment QR"
+       style="width:100%; max-width:300px; border-radius:12px;">
+  <p><strong>Book:</strong> Think Like a Topper</p>
+  <p><strong>Amount:</strong> ₹49</p>
+  <p>After paying, keep your UPI transaction reference number.
+     Your payment will be verified manually before the PDF is sent.</p>
+  <p>
+    <a href="https://wa.me/" target="_blank" rel="noopener">
+      Contact us after payment
+    </a>
+  </p>
+</div>
+
       </p>
     </section>
   </main>
